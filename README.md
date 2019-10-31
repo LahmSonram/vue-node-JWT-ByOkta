@@ -1,30 +1,35 @@
 # vue-node-start
 
-> A Vue.js project
+> A Vue.js And Node.js project
+> Okta jwt verifier 
+> Finale-rest // Create the dynamic REST resource
+> Sequelize // promise-based ORM for Node.js
 
-## Build Setup
+## Okta
+you will need to create an OIDC application in Okta. Sign up for a forever-free developer account
+> https://developer.okta.com/signup/
+>> create a new application by clicking “Add Application”.
+>> Select the “Single-Page App” platform option.
+
+> You’ll need to replace {yourOktaDomain} and {clientId} which can be found on your application overview page in the Okta Developer Console.
+
+  issuer: 'https://{yourOktaDomain}/oauth2/default',
+  client_id: '{clientId}',
+  
+### Build Setup
 
 ``` bash
 # install dependencies
 npm install
 
+# run server node js at localhost:8081
+node ./src/server
+
 # serve with hot reload at localhost:8080
 npm run dev
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+https://developer.okta.com/blog/2018/02/15/build-crud-app-vuejs-node
