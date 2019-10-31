@@ -1,21 +1,25 @@
 # vue-node-start
 
-> A Vue.js And Node.js project
-> Okta jwt verifier 
-> Finale-rest // Create the dynamic REST resource
-> Sequelize // promise-based ORM for Node.js
+``` bash
+# A Vue.js And Node.js project
+# Okta jwt verifier 
+# Finale-rest // Create the dynamic REST resource
+# Sequelize // promise-based ORM for Node.js
+```
 
 ## Okta
 you will need to create an OIDC application in Okta. Sign up for a forever-free developer account
+``` bash
 > https://developer.okta.com/signup/
 >> create a new application by clicking “Add Application”.
 >> Select the “Single-Page App” platform option.
 
 > You’ll need to replace {yourOktaDomain} and {clientId} which can be found on your application overview page in the Okta Developer Console.
-
+  src/router/index.js and src/server.js
+  
   issuer: 'https://{yourOktaDomain}/oauth2/default',
   client_id: '{clientId}',
-  
+```
 ### Build Setup
 
 ``` bash
